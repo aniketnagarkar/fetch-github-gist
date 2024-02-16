@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t aniket2525/equal-expert-assignment1:v1 .
+        run: docker build -t git-hub-user-list .
 
       - name: Push Docker image
-        run: docker push yaniket2525/equal-expert-assignment1:v2
+        run: docker push aniket2525/git-hub-user-list:v1
