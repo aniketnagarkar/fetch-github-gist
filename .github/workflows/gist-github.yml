@@ -19,8 +19,11 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
+      - name: Docker pull image
+        run: docker pull aniket2525/equal-expert-assignment1:v1
+
       - name: Build Docker image
-        run: docker build -t git-hub-user-list .
+        run: docker build -t aniket2525/equal-expert-assignment1:v1
 
       - name: Push Docker image
         run: docker push aniket2525/git-hub-user-list:v1
