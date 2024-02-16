@@ -29,7 +29,6 @@ jobs:
         run: docker push aniket2525/equal-expert-assignment1:v2
 
   run_and_test:
+    runs-on: ubuntu-latest
     steps:
-      - name: Output Message
-        uses: echo This is an ouptu
-      
+      - run: echo This is the final output
